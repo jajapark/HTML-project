@@ -1,0 +1,145 @@
+* {                     /*get rid of default margins*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;     /*optional*/
+}
+
+body {
+    background: #fff;
+    /*background-image: url(../Desktop/Brstorm/bground2.jpg);
+    background-size: cover;
+    box-sizing: border-box;     /*optional*/ */
+}
+
+#navi{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+nav {
+    width: 100%;
+    height: 60px;
+    background-color: teal;
+}
+
+nav p {
+    font-family: arial;
+    font-weight: bold;
+    color: cyan;
+    font-size: 30px;
+    line-height: 55px;
+    float: left;                /*make name of website go to the left of the navigation*/
+    padding: 0px 20px;
+}
+
+nav ul {
+    float: left;                /*float on the right side of the website name*/
+}
+
+nav ul li {
+    float: left;
+    list-style: none;
+    position: relative;         /*ignore dropdown until activated*/ /*to activate position absolute*/
+}
+
+nav ul li a {
+    display: block;
+    font-family: arial;
+    color: white;
+    font-size: 14px;
+    padding: 22px 14px;         /*check if link link activates with navigation bar*/
+    text-decoration: none;      /*removes underline*/
+}
+
+nav ul li ul {                  /*nav ul li a ul*/
+    display: none;              /*include hover inside dropdown*/   /*hover first then dropdown*/
+    position: absolute;
+    background-color: teal;
+    padding: 10px;
+    border-radius: 0px 0px 4px 4px;
+}
+
+nav ul li:hover ul {         /*activate styling when we hover inside list item */             
+    display: block;             /*display block after hover*/         
+}
+
+nav ul li ul li  {                  
+    width: 180px;               /*fit all the texts*/
+    border-radius: 4px;         /*rounded borders*/
+}
+
+nav ul li ul li a {                  
+    padding: 8px 14px;         /*decreases spacing*/
+}
+
+nav ul li ul li a:hover {                  
+    background-color: cadetblue;
+}
+
+/*---Header img---*/
+.banner 
+{
+	width: 100%;
+	min-height: 50vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background: url(Brstorm/bground1.jpg);	
+	background-size: cover;
+}
+.banner .content
+{
+	max-width: 900px;
+	text-align: center;
+}
+.banner .content h2
+{
+	font-size: 5em;
+	color: #fff;
+}
+
+/*content*/
+h6{
+    font-size: 50px;
+    padding: 40px 0 0 30px;
+    color: red;
+    text-align: center;
+}
+h5{
+    padding: 40px 0 0 30px;
+    color: darkcyan;
+    font-size: 25px;
+}
+h1{
+    padding: 40px 0 0 30px;
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+p{
+    margin-left: 20px;
+    padding: 10px;
+    font-size: 20px;
+}
+.knowhow ul{
+    display: list-item;
+    padding: 10px 0 10px 45px;
+    font-size: 20px;
+}
+.image{
+    margin: 40px 40px 40px 40px;
+    align-items: center;
+    text-align: center;
+}
+.keypoint h3{
+    margin-top: 20px;
+    padding: 5px 0 15px 20px;
+    text-align: left;
+    color: darkmagenta;
+    font-size: 20px;
+}
+.keypoint ul{
+    padding: 5px 0 5px 45px;
+    display: list-item;
+    font-size: 18px;
+}
